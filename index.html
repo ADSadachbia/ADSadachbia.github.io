@@ -15,18 +15,21 @@
 
 <body style="background-color:rgb(0, 0, 0) ;">
 
-<div class="login-form">
-<form method="post" action="">
-<div class="">
-  <h5 style="color: rgb(0, 136, 255);">Usuario</h5>
-  <input  type="text" id="user" class="input" name="user">
+  <div class="login-form">
+    <form method="post" action="login.php">
+        <div class="form-group">
+            <h5 style="color: rgb(0, 136, 255);">Usuario</h5>
+            <input type="text" id="user" class="input" name="username">
+        </div>
+        <div class="form-group">
+            <h5 style="color: rgb(0, 136, 255);">Password</h5>
+            <input type="password" id="password" class="input" name="password">  
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Login">
+        </div>
+    </form>
 </div>
-<div>
-  <h5 style="color: rgb(0, 136, 255);">Password</h5>
-  <input  type="password" id="password" class="input" name="password">  
-</div>
-</div>
-</form>
 
 
 <div class="header" style="background-image: url(imgs/Banner.jpg)">
@@ -36,7 +39,7 @@
    
 <div id="header">
 <ul class="nav"> 
-  <li><a class="button button1" class="button button5" href="0.0MEMES! El ADN DEL ALMA.html">Inicio</a></li>
+  <li><a class="button button1" class="button button5" href="index.html">Inicio</a></li>
   <li><a class="button button2" href="1.Origen y Teoría.html">Concepto</a></li>
   <li><a class="button button3" href="2.Internet.html">Internet</a></li>
   <li><a class="button button4" href="3.Armas.html">Weapons</a></li>
