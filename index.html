@@ -3,38 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEMES</title>
-    <link rel="stylesheet" href="CSS//Style.css">
-    <link rel="stylesheet" href="CSS//Header and menu style.css">
-    <Style>*{
-      padding: 0px;
-      margin: 0px;
-    }
-    </Style>
+    <title>MEMES</title> 
+    <link rel="stylesheet" href="Assets//CSS//Style.css">
+    <link rel="stylesheet" href="Assets//CSS//Header and menu style.css">
+    <link rel="stylesheet" type="text/css" href="Assets//CSS//Modal.css">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="Assets/JS/LoginPop.js"></script>
 </head>
-
 <body style="background-color:rgb(0, 0, 0) ;">
 
-  <div class="login-form">
-    <form method="post" action="login.php">
-        <div class="form-group">
-            <h5 style="color: rgb(0, 136, 255);">Usuario</h5>
-            <input type="text" id="user" class="input" name="username">
-        </div>
-        <div class="form-group">
-            <h5 style="color: rgb(0, 136, 255);">Password</h5>
-            <input type="password" id="password" class="input" name="password">  
-        </div>
-        <div class="form-group">
-            <input type="submit" class="btn btn-primary" value="Login">
-        </div>
-    </form>
+<div>
+<button style="margin-left: 30cm;" id="openModalBtn">Iniciar Sesión</button><div id="loginModal" class="modal">
+  <div class="modal-content">
+      <span class="close" id="closeModalBtn">&times;</span>
+      <h2>Iniciar Sesión</h2>
+      <form action="login.php" method="POST">
+          <label for="username">Usuario:</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+
+          <input type="submit" value="Iniciar Sesión">
+      </form>
+  </div>
+</div>
+<script src="Assets//JS//Modal.js"></script>
 </div>
 
-
-<div class="header" style="background-image: url(imgs/Banner.jpg)">
+<div class="header" style="background-image: url(Assets//imgs/Banner.jpg)">
   <h1 style="color: rgb(255, 0, 0);" class="banner">MEMES! THE DNA OF THE SOUL</h1>
-  <img id="Logo" src="imgs\Logo.jpg" alt=""/>
+  <img id="Logo" src="Assets//imgs\Logo.jpg" alt=""/>
 </div>
    
 <div id="header">
